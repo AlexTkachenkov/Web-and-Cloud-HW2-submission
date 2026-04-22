@@ -1,5 +1,5 @@
 node_modules/
-.env
-.txt
-.bat
+*.env
+*.txt
+*.bat
     *(This prevents your API key and heavy library files from cluttering your git history)*.
