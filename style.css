@@ -6,6 +6,7 @@
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -19,25 +20,28 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
-  .logo-text {
-  font-family: Nunito;
-font-weight: 700;
-font-size: 24px;
-line-height: 100%;
-letter-spacing: 25%;
 }
 
-  .li {
-    font-family: Nunito;
-font-weight: 700;
-font-style: Bold;
-font-size: 30px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
 
-  }
+.logo-text {
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 25%;
+  color: #3E3F43;
+}
+.li {
+  font-family: Nunito;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 /* Style the navigation list to be horizontal */
@@ -50,10 +54,10 @@ nav ul {
 /* Remove default link styling */
 nav a {
   text-decoration: none;
-  color: #333; /* Dark gray, change to match your design */
+  color: #612999;
   font-weight: normal;
   transition: color 0.3s ease; /* Makes the hover effect smooth */
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Nunito", sans-serif;
 }
 
@@ -64,7 +68,7 @@ nav a.active {
 
 /* The Hover State (Rule: must turn light purple) */
 nav a:hover {
-  color: #9b59b6;
+  color: #E6DBFE;
 }
 
 .hero-section {
@@ -111,9 +115,129 @@ nav a:hover {
   font-family: "Rubik", sans-serif;
   /*color: #9b59b6;*/
   color: #333;
-  .h1 {
-    font-weight: 700;
-  }
+}
+.about h2 {
+  font-weight: 700;
+  font-size: 28px;
+  padding: 0 0 10px 0;
+  color: #612999;
+}
+.cards-title {
+  font-weight: 700;
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    padding: 20px 0 0 20px;
+    color: #612999;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px 32px 20px;
+  margin-top: 40px;
+  height: auto; /*consider removing*/
+}
+
+.cards .gallery {
+  flex: 1 1 280px;
+  max-width: 265px;
+  background-color: #dbdbdb;
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards .gallery .gallery-image-container {
+  position: relative;
+}
+
+
+/* 2. The individual card */
+.card {
+  flex: 1 1 280px;
+  max-width: 376px;
+  background-color: #EFECFF;
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 3. The image container inside the card */
+.card-image-container {
+  position: relative;
+}
+
+/* 4. The image itself */
+.card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background-color: #E6DBFE;
+  /*padding : 4px;*/
+  border-radius: 38px;
+
+}
+
+/* 5. The heart icon inside the container */
+.card-image-container .heart-icon {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  background-color: #E6DBFE;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 6. Typography explicitly targeting the cards */
+.card h3 {
+  padding: 10px 0 0 28px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #333;
+}
+
+.card p {
+  padding: 10px 10px 0 30px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-size: 18px; /* Fixed the 18x typo here! */
+  color: #555;
+}
+
+/* 7. The Footer of the card */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+}
+
+.card-footer .price {
+  font-size: 35px;
+  font-family: "Abel", sans-serif;
+  padding: 15px 0 28px 30px;
+}
+
+.card-footer .cart-icon {
+  background-color:#612999;
+  width: 63px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* --- FOOTER --- */
@@ -121,6 +245,7 @@ footer {
   padding: 40px 0 20px 0;
   /* Optional: a very light background color separates it from the main content */
   background-color: #fcf8ff;
+  font-family: "Nunito", sans-serif;
 }
 
 .footer-container {
@@ -174,102 +299,8 @@ footer {
 }
 
 .copyright {
-  font-size: 0.8rem;
+  font-size: 16px;
+  font-weight: 600;
   color: #777;
   cursor: default; /* Live text, but not a link */
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 20px 320px 20px;
-  margin-top: 40px;
-  height: auto; /*consider removing*/
-
-  .card {
-    flex: 1 1 280px;
-    max-width: 400px;
-    /*min-width: 10px;*/
-    background-color: #dbdbdb;
-    border-radius: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .card-image-container {
-      position: relative;
-      .card-image {
-        width: 100%;
-        height: 280px; /*consider removing*/
-        object-fit: cover;
-        border-radius: 38px;
-      }
-      .heart-icon {
-        top: 15px; /* Pushes it down 15px from the top edge of the image */
-        right: 15px; /* Pushes it 15px from the right edge */
-        position: absolute; /* Allows it to be positioned on top of the image */
-        /* Styling the icon circle */
-        background-color: rgb(199, 199, 199);
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%; /* Makes the background a perfect circle */
-        cursor: pointer; /* Turns the mouse into a hand on hover */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a tiny shadow to the icon */
-      }
-    }
-  }
-  h3 {
-      padding: 10px 0 0 28px;
-      font-family: "abel", sans-serif;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 100%;
-      letter-spacing: 0%;
-
-      color: #333;
-    }
-    p {
-      padding: 10px 0 0 30px;
-      font-family: "abel", sans-serif;
-      font-weight: 400;
-      font-size: 18x;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #555;
-    }
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      font-family: "abel", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      letter-spacing: 0%;
-      color: #333;
-      
-      .price {
-          font-weight: 400;
-          font-size: 35px;
-          font-family: abel;
-          padding: 15px 0 28px 30px ;
-      }
-      .cart-icon {
-        background-color: rgb(199, 199, 199);
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%; /* Makes the background a perfect circle */
-        padding: 20px;
-        cursor: pointer; /* Turns the mouse into a hand on hover */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a tiny shadow to the icon */
-      }
-    }
-  }
 }
