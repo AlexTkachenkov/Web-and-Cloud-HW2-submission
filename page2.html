@@ -20,7 +20,7 @@
     <header>
       <div class="wrapper header-container">
         <div class="logo">
-          <span class="logo-icon">🐛</span>
+          <img src="images/BugBoutiqueLogo.png" class="logo-icon" >
           <span class="logo-text">Bug Boutique</span>
         </div>
 
@@ -35,78 +35,35 @@
       </div>
     </header>
 
-    <section class="cards">
-        <div class="gallery">
-            <div class="gallery-image-container">
-            <img src="images/OB1-OffByOneError.png" alt="Off-by-One Error" class="card-image"/>
-            </div>
-        </div>
-      
-
-      <div class="card">
-        <div class="card-image-container">
-          <img src="images/NullPtrException.webp" alt="NullPtrException" class="card-image"/>
-          <div class="heart-icon">🩷</div>
-        </div>
-        <h3>Null Pointer Exception</h3>
-        <p>Guaranteed to crash your application at the most inconvenient times. Ideal for legacy codebases.</p>
-        <div class="card-footer">
-    <span class="price">$delete(ptr);</span>
-    <span class="cart-icon">🛒</span>
-  </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image-container">
-          <img src="images/MemoyLeak.jpg" alt="MemoyLeak" class="card-image"/>
-          <div class="heart-icon">🩷</div>
-        </div>
-        <h3>Memory Leak</h3>
-        <p>Slowly consume all available memory until your server crashes. Great for testing your monitoring tools!</p>
-        <div class="card-footer">
-    <span class="price">$0xabd123</span>
-    <span class="cart-icon">🛒</span>
-  </div>
-      </div>
-
-      <div class="card">
-  <div class="card-image-container">
-    <img src="images/MergConflict.png" alt="Merge Conflict" class="card-image"/>
-    <div class="heart-icon">🩷</div>
-  </div>
-  <h3>Merge Conflict</h3>
-  <p>A hand-curated mess of  HEAD and  master. Guaranteed to ruin a Friday afternoon.</p>
-  <div class="card-footer">
-    <span class="price">$42.00</span>
-    <span class="cart-icon">🛒</span>
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-image-container">
-    <img src="images/IntegerOverflow.jfif" alt="Integer Overflow" class="card-image"/>
-    <div class="heart-icon">🩷</div>
-  </div>
-  <h3>Integer Overflow</h3>
-  <p>(2^n) +1.<br> oldie but a goldie.</p>
-  <div class="card-footer">
-    <span class="price">$65,535.00 +1</span>
-    <span class="cart-icon">🛒</span>
-  </div>
-</div>
-
-
-      
-    </section>
+    
 
     <div class="wrapper">
-      <section class="about">
+
+        <section class="image-gallery">
+            <div class="gallery-image-container">
+                <img src="images/IntegerOverflowSmaller.png" alt="Off-by-One Error"/>
+            </div>
+
+            <div class="gallery-image-container">
+                <img src="images/BugBoutiqueLogo.png" alt="Off-by-One Error"/>
+            </div>
+
+            <div class="gallery-image-container">
+                <img src="images/NullPtrException.webp" alt="Off-by-One Error"/>
+            </div>
+    </section>
+    
+      <section class="listOfBugs">
         <h2>About Our Artisanal Bugs</h2>
-        <p>At the Bug Boutique, we believe that flawless code is just a lack of imagination. Why spend hours agonizing over unit tests and edge cases when you can deliberately inject premium chaos? We source only the finest, most unpredictable software anomalies from legacy codebases around the world, packaging them neatly for your daily stand-ups.<br><br></p>
+        <ul>
+            <li><img src="images/rocket.svg">Off-by-One Error</li>
+            <li><img src="images/rocket.svg">Null Pointer Exception</li>
+            <li><img src="images/rocket.svg">Memory Leak</li>
+        </ul>
+    </section>
     
-    <p>Whether you need a subtle off-by-one error to keep your QA team employed, or a catastrophic memory leak to finally justify that expensive AWS server upgrade, we have exactly what you're looking for. Our hand-crafted bugs are guaranteed to pass initial peer reviews and will only execute their payload the exact moment you deploy to production on a Friday afternoon.<br><br></p>
-    
-    <p>We've surveyed hundreds of exhausted senior developers to find out what truly keeps them awake at night, compiling a master database of despair. All you have to do is browse our selection, and our proprietary matchmaking algorithm will pair you with the perfect disaster to completely derail your current Agile sprint.<br></p>
+    <section class="your-choice">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/9SbHBkIk1tU?si=w0O2iLuIoZtMJZdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     
@@ -136,9 +93,9 @@
 
             <div class="footer-bottom">
                 <div class="social-icons">
-                    <a href="https://twitter.com" target="_blank">🐦</a>
-                    <a href="https://facebook.com" target="_blank">📘</a>
-                    <a href="https://instagram.com" target="_blank">📸</a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"></a>
                 </div>
                 <p class="copyright">&copy; 2025 Bug Boutique</p>
             </div>

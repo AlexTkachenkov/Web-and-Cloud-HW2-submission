@@ -116,6 +116,46 @@ nav a:hover {
   /*color: #9b59b6;*/
   color: #333;
 }
+
+.wrapper .listOfBugs {
+    padding: 20px 0px 0px 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.wrapper .listOfBugs h2 {
+ font-family: Rubik;
+font-weight: 500;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: 0%;
+padding: 0 0 20px 0;
+color: #612999;
+}
+
+.wrapper .listOfBugs ul {
+  list-style: none;
+}
+
+.wrapper .listOfBugs ul li {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #555;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .listOfBugs ul li img {
+  width: 82px;
+  height: 82px;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: #612999;
+  border-radius: 50%;
+  line-height: 14px;
+}
+
 .about h2 {
   font-weight: 700;
   font-size: 28px;
@@ -129,6 +169,15 @@ nav a:hover {
     padding: 20px 0 0 20px;
     color: #612999;
 }
+
+.your-choice {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -138,18 +187,28 @@ nav a:hover {
   height: auto; /*consider removing*/
 }
 
-.cards .gallery {
-  flex: 1 1 280px;
-  max-width: 265px;
-  background-color: #dbdbdb;
-  border-radius: 38px;
+.image-gallery  {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.cards .gallery .gallery-image-container {
+.image-gallery  .gallery-image-container {
   position: relative;
 }
+
+.image-gallery  .gallery-image-container img {
+  
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background-color: #E6DBFE;
+  padding : 4px;
+  /*border-radius: 38px;*/
+
+}
+
 
 
 /* 2. The individual card */
@@ -243,8 +302,8 @@ nav a:hover {
 /* --- FOOTER --- */
 footer {
   padding: 40px 0 20px 0;
-  /* Optional: a very light background color separates it from the main content */
-  background-color: #fcf8ff;
+  
+  background-color: #EFECFF;
   font-family: "Nunito", sans-serif;
 }
 
