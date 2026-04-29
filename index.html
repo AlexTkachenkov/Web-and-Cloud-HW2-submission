@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Bug Boutique | Alex Tkachenkov</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bug Boutique | Alex Tkachenkov</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -40,7 +49,82 @@
     
     <div class="wrapper">
       <section class="about">
-        <h2>About</h2>
+        <h2>About Our Artisan Mistakes</h2>
+        <p>At the Bug Boutique, we believe that flawless code is just a lack of imagination. Why spend hours agonizing over unit tests and edge cases when you can deliberately inject premium chaos? We source only the finest, most unpredictable software anomalies from legacy codebases around the world, packaging them neatly for your daily stand-ups.<br><br></p>
+    
+    <p>Whether you need a subtle off-by-one error to keep your QA team employed, or a catastrophic memory leak to finally justify that expensive AWS server upgrade, we have exactly what you're looking for. Our hand-crafted bugs are guaranteed to pass initial peer reviews and will only execute their payload the exact moment you deploy to production on a Friday afternoon.<br><br></p>
+    
+    <p>We've surveyed hundreds of exhausted senior developers to find out what truly keeps them awake at night, compiling a master database of despair. All you have to do is browse our selection, and our proprietary matchmaking algorithm will pair you with the perfect disaster to completely derail your current Agile sprint.<br></p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/OB1-OffByOneError.png" alt="Off-by-One Error" class="card-image"/>
+          <div class="heart-icon">🩷</div>
+        </div>
+        <h3>Off-by-One Error</h3>
+        <p>Perfect for when you want to miss the last item in a list, just to keep things interesting.</p>
+        <div class="card-footer">
+    <span class="price">$(n+1).99</span>
+    <span class="cart-icon">🛒</span>
+  </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/NullPtrException.webp" alt="NullPtrException" class="card-image"/>
+          <div class="heart-icon">🩷</div>
+        </div>
+        <h3>Null Pointer Exception</h3>
+        <p>Guaranteed to crash your application at the most inconvenient times. Ideal for legacy codebases.</p>
+        <div class="card-footer">
+    <span class="price">$delete(ptr);</span>
+    <span class="cart-icon">🛒</span>
+  </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="images/MemoyLeak.jpg" alt="MemoyLeak" class="card-image"/>
+          <div class="heart-icon">🩷</div>
+        </div>
+        <h3>Memory Leak</h3>
+        <p>Slowly consume all available memory until your server crashes. Great for testing your monitoring tools!</p>
+        <div class="card-footer">
+    <span class="price">$0xabd123</span>
+    <span class="cart-icon">🛒</span>
+  </div>
+      </div>
+
+      <div class="card">
+  <div class="card-image-container">
+    <img src="images/MergConflict.png" alt="Merge Conflict" class="card-image"/>
+    <div class="heart-icon">🩷</div>
+  </div>
+  <h3>Merge Conflict</h3>
+  <p>A hand-curated mess of  HEAD and  master. Guaranteed to ruin a Friday afternoon. [cite: 34]</p>
+  <div class="card-footer">
+    <span class="price">$42.00</span>
+    <span class="cart-icon">🛒</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-image-container">
+    <img src="images/IntegerOverflow.jfif" alt="Integer Overflow" class="card-image"/>
+    <div class="heart-icon">🩷</div>
+  </div>
+  <h3>Integer Overflow</h3>
+  <p>(2^n) +1.<br> oldie but a goldie.</p>
+  <div class="card-footer">
+    <span class="price">$65,535.00 +1</span>
+    <span class="cart-icon">🛒</span>
+  </div>
+</div>
+
+
+      
     </section>
     <footer>
         <div class="wrapper footer-container">
@@ -53,6 +137,8 @@
                         <li><a href="#!">Work With Us</a></li>
                     </ul>
                 </div>
+
+                
                 
                 <div class="footer-col">
                     <h4>FOLLOW US</h4>

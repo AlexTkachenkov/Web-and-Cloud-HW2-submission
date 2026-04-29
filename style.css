@@ -9,10 +9,10 @@ body {
 }
 
 .wrapper {
-  max-width: 800px; /* Limits the maximum width so it doesn't stretch infinitely */
-  margin: 0 auto; /* The magic trick: 'auto' on left/right margins centers the box */
-  padding: 0 20px; /* Adds a little inside buffer so text doesn't touch the screen edge on mobile */
-  width: 100%; /* Ensures the wrapper shrinks smoothly on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 .header-container {
   display: flex;
@@ -21,13 +21,22 @@ body {
   height: 80px;
 
   .logo-text {
-    font-size: 24px; /* Adjust as needed */
-    font-weight: bold;
-    color: #ff0000;
-  }
+  font-family: Nunito;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 25%;
+}
 
   .li {
-    font-size: 38px; /* Adjust as needed */
+    font-family: Nunito;
+font-weight: 700;
+font-style: Bold;
+font-size: 30px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
   }
 }
 
@@ -44,6 +53,8 @@ nav a {
   color: #333; /* Dark gray, change to match your design */
   font-weight: normal;
   transition: color 0.3s ease; /* Makes the hover effect smooth */
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
 }
 
 /* The Active State (Rule: must be bold) */
@@ -60,7 +71,8 @@ nav a:hover {
   width: 100%;
   height: 60vh;
 
-  background-image: url("Software-bug.webp");
+  /*background-image: url("Software-bug.webp");*/
+  background-image: url("images/software_bug_edited.png");
   background-size: cover;
   background-position: center;
 
@@ -77,9 +89,11 @@ nav a:hover {
 .hero-content h1 {
   font-size: 48px;
   color: #ffffff;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-  font-style: normal;
-  text-align: center;
+  /*text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);*/
+  font-style: extra-bold;
+  font-weight: 800;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
 .hero-content p {
@@ -87,13 +101,20 @@ nav a:hover {
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   font-style: normal;
-  text-align: center;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
 }
 
 .wrapper .about {
-    padding: 20px 20px;
+  padding: 20px 20px;
+  font-family: "Rubik", sans-serif;
+  /*color: #9b59b6;*/
+  color: #333;
+  .h1 {
+    font-weight: 700;
+  }
 }
-
 
 /* --- FOOTER --- */
 footer {
@@ -156,4 +177,99 @@ footer {
   font-size: 0.8rem;
   color: #777;
   cursor: default; /* Live text, but not a link */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 20px 320px 20px;
+  margin-top: 40px;
+  height: auto; /*consider removing*/
+
+  .card {
+    flex: 1 1 280px;
+    max-width: 400px;
+    /*min-width: 10px;*/
+    background-color: #dbdbdb;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-image-container {
+      position: relative;
+      .card-image {
+        width: 100%;
+        height: 280px; /*consider removing*/
+        object-fit: cover;
+        border-radius: 38px;
+      }
+      .heart-icon {
+        top: 15px; /* Pushes it down 15px from the top edge of the image */
+        right: 15px; /* Pushes it 15px from the right edge */
+        position: absolute; /* Allows it to be positioned on top of the image */
+        /* Styling the icon circle */
+        background-color: rgb(199, 199, 199);
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%; /* Makes the background a perfect circle */
+        cursor: pointer; /* Turns the mouse into a hand on hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a tiny shadow to the icon */
+      }
+    }
+  }
+  h3 {
+      padding: 10px 0 0 28px;
+      font-family: "abel", sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+
+      color: #333;
+    }
+    p {
+      padding: 10px 0 0 30px;
+      font-family: "abel", sans-serif;
+      font-weight: 400;
+      font-size: 18x;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #555;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      font-family: "abel", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #333;
+      
+      .price {
+          font-weight: 400;
+          font-size: 35px;
+          font-family: abel;
+          padding: 15px 0 28px 30px ;
+      }
+      .cart-icon {
+        background-color: rgb(199, 199, 199);
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%; /* Makes the background a perfect circle */
+        padding: 20px;
+        cursor: pointer; /* Turns the mouse into a hand on hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a tiny shadow to the icon */
+      }
+    }
+  }
 }
