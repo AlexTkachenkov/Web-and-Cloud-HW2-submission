@@ -44,14 +44,12 @@ body {
   letter-spacing: 0%;
 }
 
-/* Style the navigation list to be horizontal */
 nav ul {
   display: flex;
-  list-style: none; /* Removes the bullet points */
-  gap: 30px; /* Space between the links */
+  list-style: none; 
+  gap: 30px; 
 }
 
-/* Remove default link styling */
 nav a {
   text-decoration: none;
   color: #612999;
@@ -87,7 +85,8 @@ nav a:hover {
 }
 
 .hero-content {
-  max-width: 500px;
+  width: 500px;
+  height: 300px;
 }
 
 .hero-content h1 {
@@ -99,6 +98,7 @@ nav a:hover {
   text-align: left;
   font-family: "Nunito", sans-serif;
 }
+
 
 .hero-content p {
   font-size: 24px;
@@ -191,7 +191,7 @@ color: #612999;
   display: flex;
   gap: 20px;
   padding: 40px 20px;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
 }
 .image-gallery  .gallery-image-container {
@@ -211,7 +211,6 @@ color: #612999;
 
 
 
-/* 2. The individual card */
 .card {
   flex: 1 1 280px;
   max-width: 376px;
@@ -222,12 +221,10 @@ color: #612999;
   justify-content: space-between;
 }
 
-/* 3. The image container inside the card */
 .card-image-container {
   position: relative;
 }
 
-/* 4. The image itself */
 .card-image {
   width: 100%;
   height: 280px;
@@ -238,7 +235,6 @@ color: #612999;
 
 }
 
-/* 5. The heart icon inside the container */
 .card-image-container .heart-icon {
   top: 15px;
   right: 15px;
@@ -254,7 +250,6 @@ color: #612999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 6. Typography explicitly targeting the cards */
 .card h3 {
   padding: 10px 0 0 28px;
   font-family: "Abel", sans-serif;
@@ -267,11 +262,10 @@ color: #612999;
   padding: 10px 10px 0 30px;
   font-family: "Abel", sans-serif;
   font-weight: 400;
-  font-size: 18px; /* Fixed the 18x typo here! */
+  font-size: 18px;
   color: #555;
 }
 
-/* 7. The Footer of the card */
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -310,10 +304,10 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 30px; /* Space between the columns and the bottom section */
+  gap: 30px; 
 }
 
-/* Side-by-side columns */
+
 .footer-columns {
   display: flex;
   gap: 100px; /* Big space between "Who We Are" and "Follow Us" */
@@ -323,7 +317,7 @@ footer {
   margin-bottom: 15px;
   font-size: 1rem;
   color: #333;
-  cursor: default; /* Meets the "Not clickable" requirement */
+  cursor: default;
 }
 
 .footer-col ul {
@@ -341,7 +335,6 @@ footer {
   transition: color 0.3s ease;
 }
 
-/* Meets the Hover effect requirement */
 .footer-col a:hover {
   color: #9b59b6;
 }
@@ -361,5 +354,5 @@ footer {
   font-size: 16px;
   font-weight: 600;
   color: #777;
-  cursor: default; /* Live text, but not a link */
+  cursor: default; 
 }
